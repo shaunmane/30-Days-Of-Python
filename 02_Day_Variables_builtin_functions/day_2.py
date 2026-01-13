@@ -53,14 +53,14 @@ circum_of_circle = 2 * 3.14 * 30
 print("circum_of_circle: ", circum_of_circle)
 
   # iii. Input
-radius = input()
+radius = input("Radius: ")
 area_of_circles = 3.14 * (int(radius) ** 2)
 print("area_of_circles: ", area_of_circles)
 
 # 13. Use the built-in input function to get first name, last name, country and age from a user and store the value to their corresponding variable names
-f_name = str(input())
-l_name = str(input())
-country_ = str(input())
-age_ = int(input())
+f_name = str(input("First Name: "))
+l_name = str(input("Last Name: "))
+country_ = str(input("Country: "))
+age_ = int(input("Age: "))
 
-print("First Name: ", f_name, "Last Name: ",l_name, "Country: ", and age")
+print("First Name: ", f_name, "- Last Name: ",l_name, "- Country: ", country_,"- Age: ", age_)
