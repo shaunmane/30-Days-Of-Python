@@ -100,3 +100,4 @@ secs = years * 365 * 24 * 60 * 60
 print("You have lived for", secs ,"seconds.")
 
 # 23. Write a Python script that displays the following table
+print( "\n", 1,  1**0,  1**1,  1**2,  1**3, "\n", 2,  2**0,  2**1,  2**2,  2**3, "\n", 3,  3**0,  3**1,  3**2,  3**3, "\n", 4,  4**0,  4**1,  4**2,  4**3, "\n", 5,  5**0,  5**1,  5**2,  5**3 )
