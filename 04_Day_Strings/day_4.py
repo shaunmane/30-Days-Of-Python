@@ -38,16 +38,50 @@ string = "Coding For All"
 print(string.index("Coding"))
 
 # 11. Replace the word coding in the string 'Coding For All' to Python.
+string = "Coding For All"
+print(string.replace("Coding", "Python"))
+
 # 12. Change "Python for Everyone" to "Python for All" using the replace method or other methods. 
+string = "Python for Everyone"
+print(string.replace("Everyone", "All"))
+
 # 13. Split the string 'Coding For All' using space as the separator (split()) .
+string = "Coding For All"
+print(string.split(" "))
+
 # 14. "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
-# 15. What is the character at index 0 in the string _Coding For All_.
-# 16. What is the last index of the string _Coding For All_.
+string = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(string.split(","))
+
+# 15. What is the character at index 0 in the string Coding For All.
+string = "Coding For All"
+print(string[0])
+
+# 16. What is the last index of the string Coding For All.
+string = "Coding For All"
+print(string[-1])       
+
 # 17. What character is at index 10 in "Coding For All" string.
+string = "Coding For All"
+print(string[10])
+
 # 18. Create an acronym or an abbreviation for the name 'Python For Everyone'.
+string = 'Python For Everyone'
+print(string.split(" ")[0][0] + string.split(" ")[1][0] + string.split(" ")[2][0])
+
 # 19. Create an acronym or an abbreviation for the name 'Coding For All'.
+string = "Coding For All"
+words = string.split(" ")
+print(words[0][0] + words[1][0] + words[2][0])
+
 # 20. Use index to determine the position of the first occurrence of C in Coding For All.
+string = "Coding For All"
+print(string.rindex("C"))
+
 # 21. Use index to determine the position of the first occurrence of F in Coding For All.
+string = "Coding For All"
+print(string.rindex("F"))
+
 # 22. Use rfind to determine the position of the last occurrence of l in Coding For All People.
 # 23. Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 # 24. Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
