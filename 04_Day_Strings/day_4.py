@@ -76,18 +76,36 @@ print(words[0][0] + words[1][0] + words[2][0])
 
 # 20. Use index to determine the position of the first occurrence of C in Coding For All.
 string = "Coding For All"
-print(string.rindex("C"))
+print(string.index("C"))
 
 # 21. Use index to determine the position of the first occurrence of F in Coding For All.
 string = "Coding For All"
-print(string.rindex("F"))
+print(string.index("F"))
 
 # 22. Use rfind to determine the position of the last occurrence of l in Coding For All People.
+string = "Coding For All People"
+print(string.rfind("l"))
+
 # 23. Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+string = "You cannot end a sentence with because because because is a conjunction"
+print(string.index("because"))
+
 # 24. Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+string = "You cannot end a sentence with because because because is a conjunction"
+print(string.rindex("because"))
+
 # 25. Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+string = "You cannot end a sentence with because because because is a conjunction"
+print(string[31:54])
+
 # 26. Find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+string = "You cannot end a sentence with because because because is a conjunction"
+print(string.find("because"))
+
 # 27. Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+string = "You cannot end a sentence with because because because is a conjunction"
+print(string[31:54])
+
 # 28. Does 'Coding For All' start with a substring _Coding_?
 # 29. Does 'Coding For All' end with a substring _coding_?
 # 30. '&nbsp;&nbsp; Coding For All &nbsp;&nbsp;&nbsp; &nbsp;' &nbsp;, remove the left and right trailing spaces in the given string.
