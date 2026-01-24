@@ -106,28 +106,40 @@ print(string.find("because"))
 string = "You cannot end a sentence with because because because is a conjunction"
 print(string[31:54])
 
-# 28. Does 'Coding For All' start with a substring _Coding_?
-# 29. Does 'Coding For All' end with a substring _coding_?
-# 30. '&nbsp;&nbsp; Coding For All &nbsp;&nbsp;&nbsp; &nbsp;' &nbsp;, remove the left and right trailing spaces in the given string.
-# 31. Which one of the following variables return True when we use the method isidentifier():
-#     - 30DaysOfPython
-#     - thirty_days_of_python
-# 32. The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
-# 33. Use the new line escape sequence to separate the following sentences.
-#     ```py
-#     I am enjoying this challenge.
-#     I just wonder what is next.
-#     ```
-# 34. Use a tab escape sequence to write the following lines.
-#     ```py
-#     Name      Age     Country   City
-#     Asabeneh  250     Finland   Helsinki
-#     ```
-# 35. Use the string formatting method to display the following:
+# 28. Does 'Coding For All' start with a substring Coding?
+string = "Coding For All"
+print(string.startswith("Coding"))
 
-# ```sh
-# radius = 10
-# area = 3.14 * radius ** 2
+# 29. Does 'Coding For All' end with a substring coding?
+string = "Coding For All"
+print(string.endswith("Coding"))
+
+# 30. '   Coding For All      ' , remove the left and right trailing spaces in the given string.
+string = "   Coding For All      "
+print(string[3:-3])
+
+# 31. Which one of the following variables return True when we use the method isidentifier():
+string1 = "30DaysOfPython"
+string2 = "thirty_days_of_python"
+print(string1.isidentifier())       # False
+print(string2.isidentifier())       # True
+
+# 32. The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+
+
+# 33. Use the new line escape sequence to separate the following sentences.
+string = "I am enjoying this challenge. \nI just wonder what is next."
+print(string)
+
+# 34. Use a tab escape sequence to write the following lines.
+print("Name\t\tAge\tCountry\t City")
+print("Asabeneh\t250\tFinland\t Helsinki")
+
+# 35. Use the string formatting method to display the following:
+radius = 10
+area = 3.14 * radius ** 2
+print(f"The area of a circle with radius {radius} is {int(area)} meters square.")
+
 # 36. Make the following using string formatting methods:
 # 8 + 6 = 14
 # 8 - 6 = 2
