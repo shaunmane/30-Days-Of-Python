@@ -125,7 +125,8 @@ print(string1.isidentifier())       # False
 print(string2.isidentifier())       # True
 
 # 32. The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
-
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print(" ".join(libraries))
 
 # 33. Use the new line escape sequence to separate the following sentences.
 string = "I am enjoying this challenge. \nI just wonder what is next."
@@ -141,10 +142,12 @@ area = 3.14 * radius ** 2
 print(f"The area of a circle with radius {radius} is {int(area)} meters square.")
 
 # 36. Make the following using string formatting methods:
-# 8 + 6 = 14
-# 8 - 6 = 2
-# 8 * 6 = 48
-# 8 / 6 = 1.33
-# 8 % 6 = 2
-# 8 // 6 = 1
-# 8 ** 6 = 262144
+a = 8
+b = 6
+print(f" {a} + {b} = {a + b}")
+print(f" {a} - {b} = {a - b}")
+print(f" {a} * {b} = {a * b}")
+print(f" {a} / {b} = {a / b:.2f}")
+print(f" {a} % {b} = {a % b}")
+print(f" {a} // {b} = {a // b}")
+print(f" {a} ** {b} = {a ** b}")
