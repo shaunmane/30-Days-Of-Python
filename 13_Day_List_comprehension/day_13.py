@@ -60,5 +60,10 @@ countries_dict = [
 names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
 #    output
 #    ['Asabeneh Yetaeyeh', 'David Smith', 'Donald Trump', 'Bill Gates']
+name_surname = [
+    item[0] + " " + item[1]
+    for name in names
+    for item in name
+]
 
 # 7. Write a lambda function which can solve a slope or y-intercept of linear functions.
