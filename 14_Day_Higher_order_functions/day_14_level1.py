@@ -25,11 +25,6 @@ def square_root(x):
 numbers_squared = map(square_root, numbers)
 print(f"Square root of each number in {numbers} is: {list(numbers_squared)}")
 
-def is_odd(num):
-    if num % 2 != 0:
-        return True
-    return False
-
 def is_prime(number):
     if not isinstance(number, int):
         return False
