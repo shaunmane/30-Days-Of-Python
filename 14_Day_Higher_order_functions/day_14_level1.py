@@ -43,5 +43,13 @@ total = reduce(multiply_two_nums, numbers)
 print(f"The total of multiplying numbers in {numbers} is: {total}")
 
 # 4. Use for loop to print each country in the countries list.
+for country in countries:
+    print(country)
+
 # 5. Use for to print each name in the names list.
+for name in names:
+    print(name)
+
 # 6. Use for to print each number in the numbers list.
+for number in numbers:
+    print(number)
