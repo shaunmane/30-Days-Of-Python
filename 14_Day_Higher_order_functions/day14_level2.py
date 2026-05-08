@@ -37,7 +37,6 @@ starts_with = lambda x: x[0] == "E"
 print(f"Countries that start with an 'E': {list(filter(starts_with, countries))}")
 
 # 8. Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))
-
 print(f"Countries that are uppercase and do not have 'land' in them: {list(map(upper, filter(without_land, countries)))}")
 
 # 9. Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
