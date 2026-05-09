@@ -51,7 +51,9 @@ sum_list = reduce(sum_two, numbers)
 print(f"Total of the sum of numbers in {numbers} is: {sum_list}")
 
 # 11. Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
-
+concat = lambda a, b: f"{a}, {b}" if b != countries[-1] else f"{a}, and {b}"
+concat_final = reduce(concat, countries)
+print(f"{concat_final} are north European countries.")
 
 # 12. Declare a function called categorize_countries that returns a list of countries with some common pattern (you can find the [countries list](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) in this repository as countries.js(eg 'land', 'ia', 'island', 'stan')).
 # 13. Create a function returning a dictionary, where keys stand for starting letters of countries and values are the number of country names starting with that letter.
