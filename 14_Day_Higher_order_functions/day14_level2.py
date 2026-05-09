@@ -40,6 +40,10 @@ print(f"Countries that start with an 'E': {list(filter(starts_with, countries))}
 print(f"Countries that are uppercase and do not have 'land' in them: {list(map(upper, filter(without_land, countries)))}")
 
 # 9. Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
+get_string = lambda x: str(x)
+get_string_list = map(get_string, numbers)
+print(f"List containing only strings: {list(get_string_list)}")
+
 # 10. Use reduce to sum all the numbers in the numbers list.
 # 11. Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
 # 12. Declare a function called categorize_countries that returns a list of countries with some common pattern (you can find the [countries list](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) in this repository as countries.js(eg 'land', 'ia', 'island', 'stan')).
