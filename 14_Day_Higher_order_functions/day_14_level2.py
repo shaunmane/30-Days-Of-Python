@@ -79,4 +79,5 @@ def get_first_ten_countries(countries_list):
     return countries_list[:10]
 
 # 15. Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
-
+def get_last_ten_countries(countries_list):
+    return countries_list[-10:]
