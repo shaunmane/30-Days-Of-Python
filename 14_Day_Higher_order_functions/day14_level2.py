@@ -63,5 +63,16 @@ def categorize_countries(countries):
 print(categorize_countries(data_countries))
 
 # 13. Create a function returning a dictionary, where keys stand for starting letters of countries and values are the number of country names starting with that letter.
+def first_letter(countries):
+    letter_count = {}
+    first = [i[0] for i in countries]
+    for let in first:
+        if let in letter_count:
+            letter_count[let] += 1
+        else:
+            letter_count[let] = 1
+    return letter_count
+print(first_letter(countries))
+
 # 14. Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
 # 15. Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
