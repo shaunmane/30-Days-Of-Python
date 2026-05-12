@@ -6,6 +6,7 @@
 ### Exercises: Level 3
 # ─────────────────────────────────────────────
 # 1. Use the countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) file and follow the tasks below:
+from data.countries_data import countries_data as countries
 #    - Sort countries by name, by capital, by population
 def sort_name(countries):
     return sorted(countries, key=lambda country: country["name"]) 
@@ -17,4 +18,10 @@ def sort_population(countries):
     return sorted(countries, key=lambda country: country["population"]) 
 
 #    - Sort out the ten most spoken languages by location.
+def most_spoken_by_location(countries):
+    most_spoken = sorted(countries, key=lambda country: len(country["languages"]), reverse=True)[:10]
+    return sorted(most_spoken, key=lambda x: x["name"])
+    
 #    - Sort out the ten most populated countries.
+def most_populated(countries):
+    return sorted(countries, key=lambda country: country["population"], reverse=True)[:10]
