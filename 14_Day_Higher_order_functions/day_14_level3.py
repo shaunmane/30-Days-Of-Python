@@ -6,6 +6,7 @@
 ### Exercises: Level 3
 # ─────────────────────────────────────────────
 # 1. Use the countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) file and follow the tasks below:
+from data.countries_data import countries_data as countries
 #    - Sort countries by name, by capital, by population
 def sort_name(countries):
     return sorted(countries, key=lambda country: country["name"]) 
