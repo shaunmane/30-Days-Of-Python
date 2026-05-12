@@ -22,3 +22,5 @@ def most_spoken_by_location(countries):
     return sorted(most_spoken, key=lambda x: x["name"])
     
 #    - Sort out the ten most populated countries.
+def most_populated(countries):
+    return sorted(countries, key=lambda country: country["population"], reverse=True)[:10]
