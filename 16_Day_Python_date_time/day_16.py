@@ -24,9 +24,13 @@ print(datetime.strptime(date_string, "%d %B, %Y"))
 # 4. Calculate the time difference between now and new year.
 new_year = datetime(year = 2027, month = 1, day = 1)
 time_diff =  new_year - now
-print(time_diff)
+print(f"Time difference between now and new year: {time_diff}")
 
 # 5. Calculate the time difference between 1 January 1970 and now.
+old_time = datetime(year=1970, month=1, day=1)
+diff = now - old_time 
+print(f"Difference between 1 January 1970 and now is: {diff}")
+
 # 6. Think, what can you use the datetime module for? Examples:
 #    - Time series analysis
 #    - To get a timestamp of any activities in an application
