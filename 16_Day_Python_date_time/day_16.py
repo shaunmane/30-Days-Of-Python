@@ -35,3 +35,5 @@ print(f"Difference between 1 January 1970 and now is: {diff}")
 #    - Time series analysis
 #    - To get a timestamp of any activities in an application
 #    - Adding posts on a blog 
+def log_upload():
+    print(f"User uploaded image at: {datetime.now().strftime('%H:%M:%S')}")
