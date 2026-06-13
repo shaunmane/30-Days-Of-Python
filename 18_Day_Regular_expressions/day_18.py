@@ -39,7 +39,22 @@ def get_distance(text):
 # is_valid_variable('first-name') # False
 # is_valid_variable('1first_name') # False
 # is_valid_variable('firstname') # True
+def is_valid_variable(variable):
+    keywords = [
+    "False", "None", "True", "and", "as", 
+    "assert", "async", "await", "break",
+    "class", "continue", "def", "del",
+    "elif", "else", "except", "finally", 
+    "for", "from", "global", "if", "import", 
+    "in", "is", "lambda", "nonlocal", "not",
+    "or", "pass", "raise", "return",
+    "try", "while", "with", "yield" ]
+    
+    if not re.fullmatch(r"[a-zA-Z_][a-zA-Z0-9_]*", variable): 
+        print(False)
+        return
 
+    print(variable not in keywords)
 
 ### Exercises: Level 3
 
