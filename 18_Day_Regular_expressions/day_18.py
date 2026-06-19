@@ -62,6 +62,23 @@ def is_valid_variable(variable):
 
 sentence = '''%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'''
 
-print(clean_text(sentence));
+def clean_text(text):
+    match = r'[%$@&#;!.,]'
+    return re.sub(match, '', text)
+
+cleaned_text = clean_text(sentence)
+
+def most_frequent_words(cleaned_text):
+    #words = clean_text(text)
+    all_words  = re.findall(r'\b\w+\b', cleaned_text, re.I)
+    count_word = {}
+    for word in all_words:
+        count_word[word] = len(re.findall(rf'\b{word}\b', cleaned_text, re.I))
+    counted_words = sorted(count_word.items(), key=lambda item: item[1], reverse=True)
+    
+    return counted_words[:3]
+
+print(clean_text(sentence))
 # I am a teacher and I love teaching There is nothing as more rewarding as educating and empowering people I found teaching more interesting than any other jobs Does this motivate you to be a teacher
 print(most_frequent_words(cleaned_text)) # [(3, 'I'), (2, 'teaching'), (2, 'teacher')]
+
